@@ -1,8 +1,8 @@
 // production config
-const merge = require('webpack-merge');
-const {resolve} = require('path');
+const merge = require('webpack-merge')
+const { resolve } = require('path')
 
-const commonConfig = require('./common');
+const commonConfig = require('./common')
 
 module.exports = merge(commonConfig, {
   mode: 'production',
@@ -14,4 +14,4 @@ module.exports = merge(commonConfig, {
   },
   devtool: 'source-map',
   plugins: [],
-});
+})
